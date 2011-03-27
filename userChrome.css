@@ -1,0 +1,60 @@
+/*
+ * The following style allow to get a better integration of Firefox 4
+ * with tabs on top & no menu bar under Compiz, XFCE or other alternative
+ * window managers
+ */
+
+@-moz-document url(chrome://browser/content/), url-prefix('chrome://'){
+
+	/*
+	 * First, set the background of the tabs toolbar
+	 *
+	 * Note that the #737373 color is the color from the titlebar of the window
+	 * manager
+	 */
+	#TabsToolbar[tabsontop=true]{
+		-moz-appearance: none !important;
+		background: -moz-linear-gradient(top, #737373, #737373) !important;
+		border: none !important;
+		color: #c8c8c8 !important;
+	}
+
+	/*
+	 * Now, we want to change the tab style to NOT have the background color
+	 * The colors #d2ccc2, #c3bbae match my GTK theme
+	 */
+	.tabbrowser-tab:not([selected="true"]),
+	.tabs-newtab-button {
+		background: -moz-linear-gradient(top, #d2ccc2, #c3bbae) !important;
+		background-origin: border-box !important;
+		background-position: 1px 2px !important;
+		background-size: 100% -moz-calc(100% - 2px) !important;
+		background-repeat: no-repeat !important;
+		color:black !important;
+	}
+
+	/*
+	 * Now, we want to change the hover tab style to NOT have the background color
+	 * The colors #f2efe8, #d9d1c4 match my GTK theme
+	 */
+	.tabbrowser-tab:not([selected="true"]):hover,
+	.tabs-newtab-button:hover {
+		background: -moz-linear-gradient(top, #f2efe8, #d9d1c4) !important;
+		background-origin: border-box !important;
+		background-position: 1px 2px !important;
+		background-size: 100% -moz-calc(100% - 2px) !important;
+		background-repeat: no-repeat !important;
+	}
+
+
+	/* A few extra tweaks to match the font of the Firefox menu with the title bar */
+	.tabs-alltabs-button[showTabCounter="true"],
+	#appmenu-toolbar-button {
+		font-size: 13px !important;
+	}
+	.tabs-alltabs-button[showTabCounter="true"]:not(:hover),
+	#appmenu-toolbar-button:not(:hover) {
+		color: #c8c8c8 !important;
+	}
+
+}
