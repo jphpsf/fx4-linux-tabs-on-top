@@ -24,8 +24,8 @@ Adapt userChrome.css as needed and then place it under the chrome dir of your Fi
 
 # Notes
 
-I could not figure out how to inherit the colors of my window manager so the colors are currently hard coded.
+I could not figure out how to inherit the colors from my window manager so the colors are currently hard coded.
 
-To figure out the id or class name to style, use the [ChromeBug extension]http://getfirebug.com/wiki/index.php/Chromebug_User_Guide
+To figure out the id or class name to style, use the [ChromeBug extension](http://getfirebug.com/wiki/index.php/Chromebug_User_Guide)
 
-To try out new style without restarting the browser, use the [Stylish extension]https://addons.mozilla.org/en-US/firefox/addon/stylish/
+To try out new style without restarting the browser, use the [Stylish extension](https://addons.mozilla.org/en-US/firefox/addon/stylish/)
