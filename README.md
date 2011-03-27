@@ -12,11 +12,11 @@ I put together an userChrome.css stylesheet to fix that (userChrome.css is a set
 
 See this screenshot before:
 
-![Before](https://github.com/jphpsf/fx4-linux-tabs-on-top-tweaks/raw/master/before.png "Before")
+![Before](https://github.com/jphpsf/fx4-linux-tabs-on-top/raw/master/before.png "Before")
 
 And after:
 
-![After](https://github.com/jphpsf/fx4-linux-tabs-on-top-tweaks/raw/master/after.png "After")
+![After](https://github.com/jphpsf/fx4-linux-tabs-on-top/raw/master/after.png "After")
 
 # Install
 
